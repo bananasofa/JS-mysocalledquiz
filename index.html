@@ -1,3 +1,5 @@
+ <!-- this is a work in progress -->
+
 <!Doctype HTML>
 <html lang="eng">
    <head>
@@ -11,126 +13,102 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
    <body>
+	   
       <div class="box glowing">
-			<div id="top">
-				<div class="button-small-left"><a href=http://www.angela-chase.com><< Angela.Chase.com</a></div>
-				<div class="button-small-right"><a href=http://www.twitter.com/theangelachase><img src=images/twitter.png width=80%></a></div>
-				<div class="button-small-right"><a href=http://www.instagram.com/theangelachase><img src=images/instagram.png width=80%></a></div>
-				</div>
-			</div>
-         <div id="header">
-            <h1 id="text">My so-called <br>personality quiz<br>_ _ _ _ _ </h1>
+         <div id="top">
+            <div class="button-small-left"><a href=http://www.angela-chase.com><< Angela.Chase.com</a></div>
+            <div class="button-small-right"><a href=http://www.twitter.com/theangelachase><img src=images/twitter.png width=80%></a></div>
+            <div class="button-small-right"><a href=http://www.instagram.com/theangelachase><img src=images/instagram.png width=80%></a></div>
          </div>
-         <div id="quiz">
-            <div id="question"></div>
-            <label class="option"><input type="radio" name="option" value="1" onclick="score10();"/><span id="option1"></span></label>
-            <label class="option"><input type="radio" name="option" value="2" onclick="score20();"/><span id="option2"></span></label>
-            <label class="option"><input type="radio" name="option" value="3" onclick="score30();" /><span id="option3"></span></label>
-            <label class="option"><input type="radio" name="option" value="4" onclick="score40();" /><span id="option4"></span></label>
-            <label class="option"><input type="radio" name="option" value="5" onclick="score50();" /><span id="option5"></span></label>
-            <label class="option"><input type="radio" name="option" /><span id="option6"></span></label>
-            <button id="next" onclick="next();">NEXT >> </button>
+      </div>
+      <div id="header">
+         <h1 id="text">My so-called <br>personality quiz</h1>
+      </div>
+      <div id="quiz">
+         <div id="question"></div>
+         <label class="option"><input type="radio" name="option" value="1" onclick="score10();"/><span id="option1"></span></label>
+         <label class="option"><input type="radio" name="option" value="2" onclick="score20();"/><span id="option2"></span></label>
+         <label class="option"><input type="radio" name="option" value="3" onclick="score30();" /><span id="option3"></span></label>
+         <label class="option"><input type="radio" name="option" value="4" onclick="score40();" /><span id="option4"></span></label>
+         <label class="option"><input type="radio" name="option" value="5" onclick="score50();" /><span id="option5"></span></label>
+         <label class="option"><input type="radio" name="option" /><span id="option6"></span></label>
+         <button id="next" onclick="next();">NEXT >> </button>
+      </div>
+      <div id="allresults">
+         Your score is:
+         <div id="result" style="display:none">
          </div>
-         <div id="allresults">
-            Your score is:
-            <div id="result" style="display:none">
-            </div>
-            <p>Here is your result:</p>
-
-						<div class=resulttext>
-							<img src=results/jordan.png class="img" width="100%">
-
+         <p>Here is your result:</p>
+         <div class=resulttext>
+            <img src=results/jordan.png class="img" width="100%">
             <h2>if you got a 0</h2>
             <p>
                You are Jordan Catalano.
                You obviously can't read.
             </p>
-					</div>
-
-
-											<div class=resulttext>
-
-						<img src=results/brian.png class="img" width="100%">
-						<h2> 1 - 70 </h2>
-						<p>
-							 You are Brian Krakow.
-							 You did not peak in high school, but, then again... you kind of did.
-						</p>
-</div>
-
-
-						<div class=resulttext>
-
-
-						<img src=results/sharon.png class="img" width="100%">
-						<h2> 71 - 140 </h2>
-						<p>
-							 You are Sharon Cherski.
-							 You are a sexy geek who will always stand your ground.
-						</p>
-</div>
-
-
-						<div class=resulttext>
-
-
-						<img src=results/angela.png class="img" width="100%">
-						<h2> 140 - 210 </h2>
-						<p>
-							 You are Angela Chanse.
-							 You are completely self-centered, but in a likeable way.
-						</p>
-</div>
-
-
-						<div class=resulttext>
-
-
-						<img src=results/rayanne.png class="img" width="100%">
-						<h2> 211 - 300 </h2>
-						<p>
-							 You are Rayanne Graff.
-							 Your heart is always in the right place.
-						</p>
-
-</div>
-
-						<div class=resulttext>
-
-						<img src=results/delia.png class="img" width="100%">
+         </div>
+         <div class=resulttext>
+            <img src=results/brian.png class="img" width="100%">
+            <h2> 1 - 70 </h2>
+            <p>
+               You are Brian Krakow.
+               You did not peak in high school, but, then again... you kind of did.
+            </p>
+         </div>
+         <div class=resulttext>
+            <img src=results/sharon.png class="img" width="100%">
+            <h2> 71 - 140 </h2>
+            <p>
+               You are Sharon Cherski.
+               You are a sexy geek who will always stand your ground.
+            </p>
+         </div>
+         <div class=resulttext>
+            <img src=results/angela.png class="img" width="100%">
+            <h2> 140 - 210 </h2>
+            <p>
+               You are Angela Chanse.
+               You are completely self-centered, but in a likeable way.
+            </p>
+         </div>
+         <div class=resulttext>
+            <img src=results/rayanne.png class="img" width="100%">
+            <h2> 211 - 300 </h2>
+            <p>
+               You are Rayanne Graff.
+               Your heart is always in the right place.
+            </p>
+         </div>
+         <div class=resulttext>
+            <img src=results/delia.png class="img" width="100%">
             <h2> 301 - 400 </h2>
             <p>
                You are Delia Fisher.
-							 You know what you want and you are not afraid to pour your heart out there.
+               You know what you want and you are not afraid to pour your heart out there.
             </p>
-
-					</div>
-
-
-											<div class=resulttext>
-
-						<img src=results/ricky.png class="img" width="100%">
+         </div>
+         <div class=resulttext>
+            <img src=results/ricky.png class="img" width="100%">
             <h2>400 or higher</h2>
             <p>
                You are Ricky Vasquez.
                You are too good to this world.
             </p>
-					</div>
-            <input type="button" class="buttons" value="Start Over" onClick="refresh(this)">
          </div>
+         <input type="button" class="buttons" value="Start Over" onClick="refresh(this)">
+      </div>
       </div>
       </div>
       <div id="footer">
-				<div class="innerfooter">
-
-         Would you like to contribute to this quiz? <br>
-         Reach out to @theangelachase <a href="http://www.twitter.com/theangelachase>@theangelachase">twitter</a> or <a href="http://www.instagram.com/theangelachase">instagram</a><br>
-         Don't forget to check out my fan-fiction at<br>
-         <a href=http://www.angela-chase.com>Angela-Chase.com</a>
-         <div id="footersmall">
-            This quiz has been created, designed and developed by <a href=http://www.bananasofa.com.br>BananaSofa</a>.
+         <div class="innerfooter">
+            Would you like to contribute to this quiz? <br>
+            Reach out to @theangelachase <a href="http://www.twitter.com/theangelachase>@theangelachase">twitter</a> or <a href="http://www.instagram.com/theangelachase">instagram</a><br>
+            Don't forget to check out my fan-fiction at<br>
+            <a href=http://www.angela-chase.com>Angela-Chase.com</a>
+            <div id="footersmall">
+               This quiz has been created, designed and developed by <a href=http://www.bananasofa.com.br>BananaSofa</a>.
+            </div>
          </div>
-			 </div>
       </div>
       <script type="text/javascript" src="questions.js"></script>
       <script type="text/javascript" src="main.js"></script>
